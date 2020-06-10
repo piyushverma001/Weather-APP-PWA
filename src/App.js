@@ -36,6 +36,9 @@ const App = () => {
                         {Math.round(weather.main.temp)}
                         <sup>&deg;</sup>
                     </div>
+                    <div>
+                        Humidity: {weather.main.humidity}
+                    </div>
                     <div className="info">
                         <img className="city-icon" src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`} alt={weather.weather[0].description} />
                         <p>{weather.weather[0].description} </p>
